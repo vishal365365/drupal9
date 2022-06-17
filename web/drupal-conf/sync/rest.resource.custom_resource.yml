@@ -1,0 +1,18 @@
+uuid: 1e72742a-5f16-498e-931e-4399eb642643
+langcode: en
+status: true
+dependencies:
+  module:
+    - module_vishal
+    - serialization
+    - user
+id: custom_resource
+plugin_id: custom_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

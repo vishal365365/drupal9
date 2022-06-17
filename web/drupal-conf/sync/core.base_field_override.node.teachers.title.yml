@@ -1,0 +1,18 @@
+uuid: e92006ed-657f-4948-85c9-307558ae1e0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.teachers
+id: node.teachers.title
+field_name: title
+entity_type: node
+bundle: teachers
+label: ' Teachers Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

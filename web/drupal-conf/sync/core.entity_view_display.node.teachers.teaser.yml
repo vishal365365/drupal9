@@ -1,0 +1,22 @@
+uuid: 8ffcf75a-52ed-455e-b4f3-438e118fa370
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.teachers.field_subject
+    - node.type.teachers
+  module:
+    - user
+id: node.teachers.teaser
+targetEntityType: node
+bundle: teachers
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_subject: true

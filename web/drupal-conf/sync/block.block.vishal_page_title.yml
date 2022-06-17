@@ -1,0 +1,20 @@
+uuid: cd6079b8-1c6b-4f4d-8c2a-c165c9fe79eb
+langcode: en
+status: false
+dependencies:
+  theme:
+    - vishal
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: vishal_page_title
+theme: vishal
+region: header
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

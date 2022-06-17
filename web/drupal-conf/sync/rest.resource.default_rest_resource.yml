@@ -1,0 +1,18 @@
+uuid: 472d7f01-c7ee-4ca6-baca-9b945a3091fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - module_vishal
+    - serialization
+    - user
+id: default_rest_resource
+plugin_id: default_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie

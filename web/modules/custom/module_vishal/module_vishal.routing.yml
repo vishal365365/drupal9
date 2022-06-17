@@ -1,0 +1,51 @@
+# Each route is defined by a machine name, in the form of my_module_name.route_name.
+#
+book.render:
+  # The path always starts with a leading forward-slash.
+  path: '/book'
+  # Defines the default properties of a route.
+  defaults:
+    # For page callbacks that return a render array use _controller.
+    _controller: '\Drupal\module_vishal\Controller\vishalcontroller::yo'
+    _title: "How are you"
+  # Require a permission to access this route.
+  requirements:
+    _permission: 'access content'
+
+# Each route is defined by a machine name, in the form of my_module_name.route_name.
+#
+vishal.render:
+  # The path always starts with a leading forward-slash.
+  path: '/vishal'
+  # Defines the default properties of a route.
+  defaults:
+    # For page callbacks that return a render array use _controller.
+    _controller: '\Drupal\module_vishal\Controller\vishalcontroller::hello'
+  # Require a permission to access this route.
+  requirements:
+    _permission: 'access content'    
+
+# Each route is defined by a machine name, in the form of my_module_name.route_name.
+#
+validate.render:
+  # The path always starts with a leading forward-slash.
+  path: '/validate'
+  # Defines the default properties of a route.
+  defaults:
+    # For page callbacks that return a render array use _controller.
+    _form: '\Drupal\module_vishal\Form\validateform'
+  # Require a permission to access this route.
+  requirements:
+    _permission: 'access content'
+
+
+vishals.render:
+  # The path always starts with a leading forward-slash.
+  path: '/vishals'
+  # Defines the default properties of a route.
+  defaults:
+    # For page callbacks that return a render array use _controller.
+    _controller: '\Drupal\module_vishal\Controller\vishalcontroller::tyo'
+  # Require a permission to access this route.
+  requirements:
+    _permission: 'access content'        

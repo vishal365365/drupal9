@@ -1,0 +1,32 @@
+uuid: 81ca232e-dfba-4448-84ac-1cd7c9e6130e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ee.body
+    - field.field.node.ee.field_imagess
+    - node.type.ee
+  module:
+    - text
+    - user
+id: node.ee.teaser
+targetEntityType: node
+bundle: ee
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagess: true

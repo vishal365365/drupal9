@@ -1,0 +1,23 @@
+uuid: 15011fd8-499f-494f-8f3b-ec0a8f80dbba
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - vishal
+_core:
+  default_config_hash: jQ-C8l3dJPqYCGST1e-kSjR14PDP4wq-iFbp8dMFcRo
+id: vishal_search
+theme: vishal
+region: header
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: node_search
+visibility: {  }

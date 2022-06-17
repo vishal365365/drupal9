@@ -1,0 +1,23 @@
+uuid: 6ba49d58-f148-44b5-a9ff-5a53f5a2fd1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.boot_camp
+  module:
+    - text
+id: node.boot_camp.body
+field_name: body
+entity_type: node
+bundle: boot_camp
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

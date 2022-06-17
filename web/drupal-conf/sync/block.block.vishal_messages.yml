@@ -1,0 +1,22 @@
+uuid: 73b12ae1-7c79-4165-9847-92fbc161709a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - vishal
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: vishal_messages
+theme: vishal
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

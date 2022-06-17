@@ -1,0 +1,5 @@
+name: 'New Form'
+description: 'We are creating new form'
+package: Custom
+type: module
+core_version_requirement: 9.x

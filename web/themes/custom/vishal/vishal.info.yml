@@ -1,0 +1,6 @@
+name: "vishal new theme"
+type: theme
+base theme: bartik
+core_version_requirement: ^8 || ^9
+libraries:
+  - vishal/global-styling  

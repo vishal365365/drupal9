@@ -1,0 +1,34 @@
+uuid: 77de1c6a-4b85-46f9-88ec-133bd54cfc15
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.boot_camp.body
+    - field.field.node.boot_camp.field_images
+    - field.field.node.boot_camp.field_node_refrrence
+    - node.type.boot_camp
+  module:
+    - text
+    - user
+id: node.boot_camp.teaser
+targetEntityType: node
+bundle: boot_camp
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_images: true
+  field_node_refrrence: true

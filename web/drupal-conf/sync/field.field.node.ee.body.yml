@@ -1,0 +1,23 @@
+uuid: 1854e129-bce3-4e89-b5ed-4ff413b21f0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ee
+  module:
+    - text
+id: node.ee.body
+field_name: body
+entity_type: node
+bundle: ee
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,48 @@
+uuid: ec1aa617-74e0-4a1f-9eea-f88a9ed68ac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.boot_camp.body
+    - field.field.node.boot_camp.field_images
+    - field.field.node.boot_camp.field_node_refrrence
+    - node.type.boot_camp
+  module:
+    - image
+    - text
+    - user
+id: node.boot_camp.default
+targetEntityType: node
+bundle: boot_camp
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_node_refrrence:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

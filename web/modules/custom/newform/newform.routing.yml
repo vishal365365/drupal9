@@ -1,0 +1,12 @@
+# Each route is defined by a machine name, in the form of my_module_name.route_name.
+#
+new.form:
+  # The path always starts with a leading forward-slash.
+  path: '/first-form'
+  # Defines the default properties of a route.
+  defaults:
+    # For page callbacks that return a render array use _controller.
+    _form: '\Drupal\newform\Form\firstform'
+  # Require a permission to access this route.
+  requirements:
+    _permission: 'access content'

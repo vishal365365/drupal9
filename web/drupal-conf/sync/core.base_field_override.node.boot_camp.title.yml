@@ -1,0 +1,18 @@
+uuid: c86cb695-91df-4bd1-98d8-0c9873ccd9d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.boot_camp
+id: node.boot_camp.title
+field_name: title
+entity_type: node
+bundle: boot_camp
+label: Vishal
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

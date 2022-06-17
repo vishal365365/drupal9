@@ -1,0 +1,29 @@
+uuid: 8ee0db8c-cdfb-4b56-b435-c3453c04b780
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_similar
+    - node.type.game_page
+    - taxonomy.vocabulary.games
+id: node.game_page.field_similar
+field_name: field_similar
+entity_type: node
+bundle: game_page
+label: Similar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      games: games
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

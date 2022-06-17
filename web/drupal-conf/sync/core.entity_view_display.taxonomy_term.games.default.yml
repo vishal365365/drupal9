@@ -1,0 +1,21 @@
+uuid: 3f2d5e41-467a-4485-9daa-329b082c392d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.games
+  module:
+    - text
+id: taxonomy_term.games.default
+targetEntityType: taxonomy_term
+bundle: games
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 3b885043-f587-4595-b6d8-fde10f4a010c
+langcode: en
+status: false
+dependencies:
+  theme:
+    - vishal
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: vishal_local_actions
+theme: vishal
+region: header
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

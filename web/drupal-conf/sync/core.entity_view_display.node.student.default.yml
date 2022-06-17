@@ -1,0 +1,36 @@
+uuid: bde4a9a0-725b-4507-812f-b50aae7e1643
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student.field_class
+    - field.field.node.student.field_teacher_assigned
+    - node.type.student
+  module:
+    - user
+id: node.student.default
+targetEntityType: node
+bundle: student
+mode: default
+content:
+  field_class:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_teacher_assigned:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

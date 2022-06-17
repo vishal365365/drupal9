@@ -1,0 +1,6 @@
+services:
+
+  # Defines a simple service which requires no parameter for its constructor.
+  module_vishal.db:
+    class: Drupal\module_vishal\services\dbs
+    arguments: ['@database']
