@@ -1,0 +1,37 @@
+uuid: 5153f5f8-23f5-46b9-a117-32453ec8f6e0
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.hello
+    - field.field.node.worksheets.body
+    - field.field.node.worksheets.field_download_worksheet
+    - field.field.node.worksheets.field_grade
+    - field.field.node.worksheets.field_subjects
+    - field.field.node.worksheets.field_worksheet_image
+    - node.type.worksheets
+  module:
+    - text
+    - user
+id: node.worksheets.hello
+targetEntityType: node
+bundle: worksheets
+mode: hello
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_download_worksheet: true
+  field_grade: true
+  field_subjects: true
+  field_worksheet_image: true

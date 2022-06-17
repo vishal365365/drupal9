@@ -1,4 +1,4 @@
-uuid: cd4539ec-f885-41f6-97c2-69da091e9823
+uuid: a4e69ac0-fd75-4041-a02f-3d929f0dad2f
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Students
-type: student
-description: ''
+name: Worksheets
+type: worksheets
+description: 'Worksheets For Solving Problems'
 help: ''
 new_revision: true
 preview_mode: 1

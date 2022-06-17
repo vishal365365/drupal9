@@ -1,4 +1,4 @@
-uuid: 915f8afb-db36-4786-a78d-b0b822e065ac
+uuid: 2486292b-e5c4-4e23-a844-9c6222b46f31
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ _core:
   default_config_hash: cL11xuvgbDwRtGEQLBQ0vuywqHSwOo9oXtztdmgiTfk
 id: tara_breadcrumbs
 theme: tara
-region: header_top
+region: breadcrumb
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

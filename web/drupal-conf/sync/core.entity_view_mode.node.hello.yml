@@ -1,0 +1,10 @@
+uuid: ebd7922b-cc22-42b4-a19f-7a53aa4930c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.hello
+label: hello
+targetEntityType: node
+cache: true

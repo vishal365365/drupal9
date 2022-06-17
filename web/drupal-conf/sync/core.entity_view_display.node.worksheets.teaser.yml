@@ -1,0 +1,34 @@
+uuid: d320b902-137a-4069-9809-248e77d1bd9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.worksheets.body
+    - field.field.node.worksheets.field_download_worksheet
+    - field.field.node.worksheets.field_grade
+    - field.field.node.worksheets.field_subjects
+    - field.field.node.worksheets.field_worksheet_image
+    - node.type.worksheets
+  module:
+    - text
+    - user
+id: node.worksheets.teaser
+targetEntityType: node
+bundle: worksheets
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_download_worksheet: true
+  field_grade: true
+  field_subjects: true
+  field_worksheet_image: true
+  links: true

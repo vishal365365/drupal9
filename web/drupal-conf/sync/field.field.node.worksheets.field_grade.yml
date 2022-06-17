@@ -1,0 +1,33 @@
+uuid: 2b64b6b0-fa13-4319-bb31-7593ee9ec5d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grade
+    - node.type.worksheets
+    - taxonomy.vocabulary.grade
+  content:
+    - 'taxonomy_term:grade:a04823d5-f2c5-44aa-ad58-c81f3a572642'
+id: node.worksheets.field_grade
+field_name: field_grade
+entity_type: node
+bundle: worksheets
+label: Grade
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: a04823d5-f2c5-44aa-ad58-c81f3a572642
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      grade: grade
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

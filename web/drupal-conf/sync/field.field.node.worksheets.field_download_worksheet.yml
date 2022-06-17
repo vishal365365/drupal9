@@ -1,0 +1,27 @@
+uuid: d956a803-bdac-4e8c-af34-517ab868b138
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_download_worksheet
+    - node.type.worksheets
+  module:
+    - file
+id: node.worksheets.field_download_worksheet
+field_name: field_download_worksheet
+entity_type: node
+bundle: worksheets
+label: 'Download Worksheet'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: '5 mb'
+  description_field: false
+field_type: file

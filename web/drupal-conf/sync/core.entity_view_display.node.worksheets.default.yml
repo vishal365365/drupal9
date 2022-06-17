@@ -1,0 +1,63 @@
+uuid: 81307cc5-9ea1-4bcb-9c78-894c8e763832
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.worksheets.body
+    - field.field.node.worksheets.field_download_worksheet
+    - field.field.node.worksheets.field_grade
+    - field.field.node.worksheets.field_subjects
+    - field.field.node.worksheets.field_worksheet_image
+    - node.type.worksheets
+  module:
+    - file
+    - image
+    - text
+    - user
+id: node.worksheets.default
+targetEntityType: node
+bundle: worksheets
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_download_worksheet:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_grade:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_subjects:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_worksheet_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,23 @@
+uuid: 1f0cb838-b567-4798-acad-108315e7ae57
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_download_worksheet
+field_name: field_download_worksheet
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
